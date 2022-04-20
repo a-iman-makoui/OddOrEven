@@ -1,0 +1,17 @@
+.pone{
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+#typeNum{
+    width: 300px;
+    height: 50px;
+    align-self: center;
+}
+.testbtn{
+    width: 400px;
+    height: 70px;
+    border-radius: 3px;
+    border: 1px solid #000;
+    align-self: center;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>odd or even</title>
+        <link href="oddeven.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <p class="pone">odd or even</p>
+        <br>
+        <input type="number" id="typeNum" placeholder="please write or select a number" min="0" max="99999999999999">
+        <br>
+        <br>
+        <br>
+        <button type="button" onclick="oddOrEven()" class="testbtn">test</button>
+        <br>
+        <p id="writer"></p>
+        <script>
+            function oddOrEven(){
+                let val=document.getElementById("typeNum").value;
+                if(val==""){
+                    document.getElementById("writer").innerHTML="please write or select a number لطفا یک عدد تایپ یا انتخاب کنید.";
+                }
+                else if(val.length==16){
+                    document.getElementById("writer").innerHTML="the number is too high عدد وارد شده بسیار بزرگ است";
+                }
+                 else if(val%2==0){
+                    document.getElementById("writer").innerHTML="even number عدد زوج";
+                }
+                else{
+                    document.getElementById("writer").innerHTML="odd number عدد فرد";
+                }
+            }
+        </script>
+    </body>
+</html>
